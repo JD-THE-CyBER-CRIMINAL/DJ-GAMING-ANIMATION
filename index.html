@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Red and Green Light</title>
 </head>
+
 <style>
     * {
         margin: 0;
@@ -20,9 +21,11 @@
         justify-content: center;
         align-items: center;
         background: #181818;
+        
     }
 
-    div {
+    /* Common styles for all divs */
+    .box {
         width: 200px;
         height: 200px;
         box-shadow: 16px 14px 20px #0000008c;
@@ -32,8 +35,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
     }
-    div::before{
+
+    /* Red light animation */
+    .red::before {
         content: "";
         background-image: conic-gradient(
             #ff0052 20deg,
@@ -42,10 +52,11 @@
         width: 150%;
         height: 150%;
         position: absolute;
-        animation: rotate 2s linear infinite;
+        animation: rotateRed 2s linear infinite;
     }
-    div::after{
-        content: "Animation";
+
+    .red::after {
+        content: "";
         width: 190px;
         height: 190px;
         background: #101010;
@@ -58,19 +69,64 @@
         font-size: larger;
         letter-spacing: 5px;
         box-shadow: inset 20px 20px 20px #0000008c;
+        
     }
-    @keyframes rotate {
-        0%{
+
+    /* Green light animation */
+    .green::before {
+        content: "";
+        background-image: conic-gradient(
+            #00ff52 20deg,
+            transparent 120deg
+        );
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        animation: rotateGreen 2s linear infinite;
+    }
+
+    .green::after {
+        content: "";
+        width: 190px;
+        height: 190px;
+        background: #101010;
+        position: absolute;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #00ff52;
+        font-size: larger;
+        letter-spacing: 5px;
+        box-shadow: inset 20px 20px 20px #0000008c;
+    }
+
+    @keyframes rotateRed {
+        0% {
             transform: rotate(0deg);
         }
-        100%{
+        100% {
             transform: rotate(-360deg);
+        }
+    }
+
+    @keyframes rotateGreen {
+        0% {
+            transform: rotate(180deg);
+        }
+        
+        100% {
+            transform: rotate(-180deg);
         }
     }
 </style>
 
 <body>
-    <div></div>
+    <!-- Red Light Div -->
+    <div class="box red"></div>
+
+    <!-- Green Light Div -->
+    <div class="box green" ></div>
 </body>
 
 </html>
