@@ -14,18 +14,7 @@
 
     <!-- Green Light Div -->
     <div class="box green" ></div>
-    <script>
-        // Fetch the Base64 encoded CSS file
-        fetch('neon.b64')
-          .then(response => response.text()) // Get the encoded text
-          .then(encodedCSS => {
-              let decodedCSS = atob(encodedCSS); // Decode Base64
-              let styleTag = document.createElement("style"); // Create <style> tag
-              styleTag.innerHTML = decodedCSS; // Inject decoded CSS
-              document.head.appendChild(styleTag); // Apply styles
-          })
-          .catch(error => console.error("Error loading CSS:", error));
-    </script>
+    
 </body>
 
 </html>
