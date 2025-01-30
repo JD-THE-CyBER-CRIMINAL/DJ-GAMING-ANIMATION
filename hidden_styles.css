@@ -2,4 +2,4 @@
    This is a stylesheet for [https://djgaming.netlify.app].
    Direct access to this file is not intended.
    Please visit [https://djgaming.netlify.app] for the full experience.
-*/@import url("./styles.css");/@import url("./styles1.css");
+*/@import url("./styles.css");@import url("./styles1.css");
