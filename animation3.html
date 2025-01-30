@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>BORDER ANIMATION</title>
-    <link rel="stylesheet" href="hidden_styles.css">
-    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+  font-family: 'Alatsi', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  font-size: 10vw;
+  color: white;
+}
+
+canvas {
+  width: 100%;
+}
+    </style>
 </head>
 <body>
     <div class="container">
   <span class="title"></span>
-        <script>var canvas = document.createElement("canvas");
+</div>
+</body>
+<script>
+    var canvas = document.createElement("canvas");
 var width = canvas.width = window.innerWidth * 0.75;
 var height = canvas.height = window.innerHeight * 0.75;
 document.body.appendChild(canvas);
@@ -162,7 +193,6 @@ function getAttribLocation(program, name) {
 canvas.onmousemove = function(e) {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
-    }</script>
-</div>
-</body>
+    }
+</script>
 </html>
