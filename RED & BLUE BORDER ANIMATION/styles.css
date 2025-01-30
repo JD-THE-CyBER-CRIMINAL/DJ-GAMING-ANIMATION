@@ -1,0 +1,108 @@
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #181818;
+        
+    }
+
+    /* Common styles for all divs */
+    .box {
+        width: 100vw;
+        height: 100vh;
+        box-shadow: 16px 14px 20px #0000008c;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+    }
+
+    /* Red light animation */
+    .red::before {
+        content: "";
+        background-image: conic-gradient(
+            #FF0000 20deg,
+            transparent 120deg
+        );
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        animation: rotateRed 2s linear infinite;
+    }
+
+    .red::after {
+        content: "";
+        width: 98vw;
+        height: 98vh;
+        background: #101010;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff0052;
+        font-size: larger;
+        letter-spacing: 5px;
+        box-shadow: inset 20px 20px 20px #0000008c;
+        
+    }
+
+    /* Green light animation */
+    .green::before {
+        content: "";
+        background-image: conic-gradient(
+            #0026FE 20deg,
+            transparent 120deg
+        );
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        animation: rotateGreen 2s linear infinite;
+    }
+
+    .green::after {
+        content: "";
+        width: 98vw;
+        height: 98vh;
+        background: #101010;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #00ff52;
+        font-size: larger;
+        letter-spacing: 5px;
+        box-shadow: inset 20px 20px 20px #0000008c;
+    }
+
+    @keyframes rotateRed {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+    @keyframes rotateGreen {
+        0% {
+            transform: rotate(180deg);
+        }
+        
+        100% {
+            transform: rotate(-180deg);
+        }
+}
