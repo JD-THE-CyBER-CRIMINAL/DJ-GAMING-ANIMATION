@@ -3,42 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>BORDER ANIMATION</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-  font-family: 'Alatsi', sans-serif;
-  margin: 0;
-  overflow: hidden;
-  background: black;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.title {
-  font-size: 10vw;
-  color: white;
-}
-
-canvas {
-  width: 100%;
-}
-    </style>
+    <link rel="stylesheet" href="hidden_styles.css">
+    
 </head>
 <body>
     <div class="container">
   <span class="title"></span>
 </div>
     <script src="script3.js"></script>
+    <script>
+        // Fetch the base64 encoded file (ensure it's accessible)
+        fetch('animation3.b64')
+            .then(response => response.text()) // Get the base64 string
+            .then(encoded => {
+                // Decode the base64 string
+                const decoded = atob(encoded); // `atob()` decodes the base64 string
+                
+                // Create a new <style> element
+                const styleElement = document.createElement('style');
+                styleElement.innerHTML = decoded; // Insert the decoded styles
+                
+                // Append the <style> element to the <head> of the document
+                document.head.appendChild(styleElement);
+            })
+            .catch(error => console.error('Error loading or decoding styles:', error));
+                   </script>
 </body>
-
 </html>
