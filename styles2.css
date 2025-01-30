@@ -1,50 +1,50 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
+Ym9keSB7
+CW1hcmdpbjogMDs=
+CXBhZGRpbmc6IDA7
+CWJhY2tncm91bmQtY29sb3I6ICMwMDA7
+CWRpc3BsYXk6IGZsZXg7
+CWp1c3RpZnktY29udGVudDogY2VudGVyOw==
+CWFsaWduLWl0ZW1zOiBjZW50ZXI7
+CWhlaWdodDogMTAwdmg7
+fQ==
 
-.block {
-	position: relative;
-	width: 50vw;
-	height: 70vh;
-	background: linear-gradient(0deg, #000, #272727);
-	border-top-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
+LmJsb2NrIHs=
+CXBvc2l0aW9uOiByZWxhdGl2ZTs=
+CXdpZHRoOiA1MHZ3Ow==
+CWhlaWdodDogNzB2aDs=
+CWJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgwZGVnLCAjMDAwLCAjMjcyNzI3KTs=
+CWJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHg7
+CWJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxMHB4Ow==
+fQ==
 
-.block:before, .block:after {
-	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	border-top-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: steam 20s linear infinite;
-}
+LmJsb2NrOmJlZm9yZSwgLmJsb2NrOmFmdGVyIHs=
+CWNvbnRlbnQ6ICcnOw==
+CXBvc2l0aW9uOiBhYnNvbHV0ZTs=
+CWxlZnQ6IC0ycHg7
+CXRvcDogLTJweDs=
+CWJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHg7
+CWJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxMHB4Ow==
+CWJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCg0NWRlZywgI2ZiMDA5NCwgIzAwMDBmZiwgIzAwZmYwMCwjZmZmZjAwLCAjZmYwMDAwLCAjZmIwMDk0LCA=
+CQkjMDAwMGZmLCAjMDBmZjAwLCNmZmZmMDAsICNmZjAwMDApOw==
+CWJhY2tncm91bmQtc2l6ZTogNDAwJTs=
+CXdpZHRoOiBjYWxjKDEwMCUgKyA0cHgpOw==
+CWhlaWdodDogY2FsYygxMDAlICsgNHB4KTs=
+CXotaW5kZXg6IC0xOw==
+CWFuaW1hdGlvbjogc3RlYW0gMjBzIGxpbmVhciBpbmZpbml0ZTs=
+fQ==
 
-@keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
-}
+QGtleWZyYW1lcyBzdGVhbSB7
+CTAlIHs=
+CQliYWNrZ3JvdW5kLXBvc2l0aW9uOiAwIDA7
+CX0=
+CTUwJSB7
+CQliYWNrZ3JvdW5kLXBvc2l0aW9uOiA0MDAlIDA7
+CX0=
+CTEwMCUgew==
+CQliYWNrZ3JvdW5kLXBvc2l0aW9uOiAwIDA7
+CX0=
+fQ==
 
-.block:after {
-	filter: blur(50px);
-  }
+LmJsb2NrOmFmdGVyIHs=
+CWZpbHRlcjogYmx1cig1MHB4KTs=
+ICB9
