@@ -8,16 +8,17 @@
 <body>
     <div class="block"></div>
     <script>
-  fetch("styles2.css") // Change URL to your actual CSS file
-    .then(response => response.text()) // Get the Base64-encoded CSS as text
-    .then(base64CSS => {
-      var decodedCSS = atob(base64CSS); // Decode Base64 to plain CSS
-      var styleElement = document.createElement("style");
-      styleElement.innerHTML = decodedCSS; // Apply CSS to page
-      document.head.appendChild(styleElement);
-    })
-    .catch(error => console.error("Error loading CSS:", error));
-</script>
-
+        // Fetch the styles.b64 file (you need to ensure the server serves it correctly)
+        fetch('animation2.b64')
+            .then(response => response.text()) // Get the base64 string
+            .then(encoded => {
+                // Decode base64 string
+                const decoded = atob(encoded); // `atob()` decodes a base64 string
+                
+                // Apply decoded styles to the page
+                document.getElementById('dynamic-styles').innerHTML = decoded;
+            })
+            .catch(error => console.error('Error loading or decoding styles:', error));
+    </script>
 </body>
 </html>
