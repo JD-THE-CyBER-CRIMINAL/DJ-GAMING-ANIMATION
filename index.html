@@ -1,20 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red and Blue Light</title>
-    <link rel="stylesheet" type="text/css" href="hidden_styles.css">
+    <title>DJ GAMING VIP - Free Fire Injectors</title>
+    
+    <style type="text/css">
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+}
+
+    </style>
 </head>
 <body>
-    <!-- Red Light Div -->
-    <div class="box red"></div>
+    <header>
+        <h1>DJ GAMING VIP</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Green Light Div -->
-    <div class="box green" ></div>
-    
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to DJ GAMING VIP</h2>
+            <p>Download the latest Free Fire injectors and mods with ease.</p>
+            <a href="#downloads" class="btn">Download Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide the best Free Fire injector tools for enhanced gameplay.</p>
+            <iframe style="width: 80vw; height: 200px; margin: auto;" src="https://www.youtube.com/embed/CPTChf2LK4I?si=QKv1KPAaWEefk_kn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="downloads">
+        <div class="container">
+            <h2>Latest Injectors</h2>
+            <div class="download-item">
+                <h3>Injector v1.0</h3>
+                <a href="injector_v1.zip" download class="btn">Download</a>
+            </div>
+            <div class="download-item">
+                <h3>Injector v2.0</h3>
+                <a href="injector_v2.zip" download class="btn">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2025 DJ GAMING VIP. All rights reserved.</p>
+    </footer>
 </body>
 
+<script type="text/javascript">
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you for your message!");
+});
+
+</script>
 </html>
