@@ -9,7 +9,8 @@
 <body class="body">
     <div class="box">Loading...</div>
 <!-- Inspired by the mega buttons on https://turbo.build/ -->
-<script>    
+<script>
+        // Fetch the base64 encoded file (ensure it's accessible)
         fetch('animation4.b64')
             .then(response => response.text()) // Get the base64 string
             .then(encoded => {
@@ -18,13 +19,13 @@
                 
                 // Create a new <style> element
                 const styleElement = document.createElement('style');
-                styleElement.innerHTML = decoded;
+                styleElement.innerHTML = decoded; // Insert the decoded styles
                 
                 // Append the <style> element to the <head> of the document
                 document.head.appendChild(styleElement);
             })
             .catch(error => console.error('Error loading or decoding styles:', error));
-    </script>
+</script>
 
 </body>
 </html>
