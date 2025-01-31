@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Page title</title>
+    <link rel="stylesheet" href="hidden_style.css">
+</head>
+<body class="body">
+    <div class="box">Loading...</div>
+<!-- Inspired by the mega buttons on https://turbo.build/ -->
+<script>    
+        fetch('animation2.b64')
+            .then(response => response.text()) // Get the base64 string
+            .then(encoded => {
+                // Decode the base64 string
+                const decoded = atob(encoded); // `atob()` decodes the base64 string
+                
+                // Create a new <style> element
+                const styleElement = document.createElement('style');
+                styleElement.innerHTML = decoded;
+                
+                // Append the <style> element to the <head> of the document
+                document.head.appendChild(styleElement);
+            })
+            .catch(error => console.error('Error loading or decoding styles:', error));
+    </script>
+
+</body>
+</html>
