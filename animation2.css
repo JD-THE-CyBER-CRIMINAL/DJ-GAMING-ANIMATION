@@ -6,7 +6,7 @@ body {
 
 .block {
 	position: relative;
-	margin: 100px auto;
+	margin: 200px auto;
 	width: 70vw;
 	height: 70vh;
 	background: linear-gradient(0deg, #000, #272727);
